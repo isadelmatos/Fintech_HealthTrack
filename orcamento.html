@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Orçamento</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo-orcamento.css">
+	<link rel="shortcut icon" type="image/png" href="imgs/icon.png">
+</head>
+<body>
+	<input type="checkbox" id="check">
+	<label for="check" class="icone-menu">
+		<i class="bi bi-list" id="colapse-menu"></i>
+	</label>
+	<header>
+		<div class="header">
+			<a href="" class="links-header">
+				<i class="bi bi-plus-square icone-header"></i>
+				<span>Adiconar valor</span>
+			</a>
+			<a href="" class="links-header">
+				<i class="bi bi-bell icone-header"></i>
+			</a>
+			<a href="" class="links-header">
+				<i class="bi bi-person-circle icone-header"></i>
+			</a>
+		</div>
+	</header>
+	<nav class="flex-box-menu">
+		<div>
+			<h1 class="logo-marca">HealthTrack</h1>
+		</div>
+		<div class="links-nav">
+			<ul>
+				<li class="item-nav">
+					<a href="dashboard.html" class="link-nav ativo">Dashboard</a>
+				</li>
+				<li class="item-nav">
+					<a href="#" class="link-nav">Estatísticas</a>
+				</li>
+				<li class="item-nav">
+					<a href="#" class="link-nav">Investimentos</a>
+				</li>
+				<li class="item-nav">
+					<a href="#" class="link-nav">Cartões de crédito</a>
+				</li>
+			</ul>
+		</div>
+		<div class="categorias-nav">
+			<div class="btn-group">
+				<button class="btn dropdown-toggle" type="button" id="dropdownMenuClickable" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+				  	<span class="titulo-receita-despesa">
+				  		<i class="bi bi-plus-square icone-adicionar-receita-despesa"></i>
+				  		Receitas
+				  	</span>
+				  	<div class="icone-dropdown">
+				  		<i class="bi bi-chevron-down"></i>
+				  	</div>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
+				 	<li><a class="dropdown-item receita-1" href="#"> Salário</a></li>
+					<li><a class="dropdown-item receita-2" href="#"> Outros</a></li>
+				</ul>
+			</div>
+			<div class="btn-group btn-2">
+				<button class="btn dropdown-toggle" type="button" id="dropdownMenuClickable" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+					<span class="titulo-receita-despesa">
+						<i class="bi bi-plus-square icone-adicionar-receita-despesa"></i>
+				Despesas
+					</span>
+					<div class="icone-dropdown">
+						<i class="bi bi-chevron-down"></i>
+					</div>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
+				 	<li><a class="dropdown-item conta-1" href="#"> Contas domésticas</a></li>
+					<li><a class="dropdown-item conta-2" href="#"> Alimentação</a></li>
+					<li><a class="dropdown-item conta-3" href="#"> Transporte</a></li>
+					<li><a class="dropdown-item conta-4" href="#"> Educação</a></li>
+					<li><a class="dropdown-item conta-5" href="#"> Entretenimento</a></li>
+				</ul>
+			</div>
+		</div>
+		<a href="index.html" class="item-nav">
+			<span>Sair</span>
+		</a>
+	</nav>	
+	<main>
+		<div class="box-main">
+			<div class="titulo-topo-orcamento">
+				<a href="dashboard.html">
+					<h2 class="titulo-pagina"><i class="bi bi-chevron-left icone-voltar"></i>Orçamento mensal</h2>
+				</a>				
+			</div>
+
+			<section class="grafico-e-infos-orcamento">
+				<div class="titulo-mes-dias">
+					<a href="">
+						<h3>Junho<i class="bi bi-sliders2"></i>
+						</h3>
+					</a>
+					<p>00 dias restantes</p>
+				</div>
+				<div class="grafico-e-totais">
+					<div class="circulo-progresso">
+						<p>Você gastou <span class="pocento-progresso"><br>87.50%</span></p>
+						<a href=""><i class="bi bi-pencil-square"></i> Editar</a>
+					</div>
+					<div class="totais">
+						<div>
+							<h4> Total orçado </h4>
+							<span class="valor-total">R$ 0000,00 </span>
+						</div>
+						<div>
+							<h4> Total gasto </h4>
+							<span class="valor-total">R$ 0000,00 </span>
+						</div>
+						<div>
+							<h4> Restante </h4>
+							<span class="valor-total">R$ 0000,00 </span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="categorias-e-infos-orcamento">
+				<div class="wrapper">
+					<table>
+						<tr class="titulos-tabela">
+							<th class="emoji"><p>Categorias</p></th>
+							<th><p>Status</p></th>
+							<th><p>Restante<i class="bi bi-eye icone-visualizar"></i></p></th>
+							<th><p>Orçado<i class="bi bi-eye icone-visualizar"></i></p></th>
+							<th><p>Gasto<i class="bi bi-eye icone-visualizar"></i></p></th>
+						</tr>
+						<tr class="item-tabela">
+							<td class="emoji categoria-1"><p>Contas Domésticas</p></td>
+							<td><p class="status status-2">No limite</p></td>
+							<td>R$ 000,00</td>
+							<td>R$ 000,00</td>
+							<td>R$ 000,00</td>
+						</tr>
+						<tr class="item-tabela">
+							<td class="emoji categoria-2"><p>Alimentação</p></td>
+							<td><p class="status status-3">Excedeu</p></td>
+							<td>R$ 000,00</td>
+							<td>R$ 000,00</td>
+							<td>R$ 000,00</td>
+						</tr>
+						<tr class="item-tabela">
+							<td class="emoji categoria-3"><p>Transporte</p></td>
+							<td><p class="status status-1">No controle</p></td>
+							<td>R$ 000,00</td>
+							<td>R$ 000,00</td>
+							<td>R$ 000,00</td>
+						</tr>
+						<tr class="item-tabela">
+							<td class="emoji categoria-4"><p>Educação</p></td>
+							<td><p class="status status-1">No controle</p></td>
+							<td>R$ 000,00</td>
+							<td>R$ 000,00</td>
+							<td>R$ 000,00</td>
+						</tr>
+						<tr class="item-tabela">
+							<td class="emoji categoria-5"><p>Entretenimento</p></td>
+							<td><p class="status status-2">No limite</p></td>
+							<td>R$ 000,00</td>
+							<td>R$ 000,00</td>
+							<td>R$ 000,00</td>
+						</tr>
+					</table>
+				</div>	
+			</section>
+		</div>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

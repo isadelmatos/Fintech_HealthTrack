@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HealthTrack - Dashboard</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" href="css/estilo-dashboard.css">
+	<link rel="shortcut icon" type="image/png" href="imgs/icon.png">
+</head>
+
+<body>
+	<input type="checkbox" id="check">
+	<label for="check" class="icone-menu">
+		<i class="bi bi-list" id="colapse-menu"></i>
+	</label>
+	<header>
+		<div class="header">
+			<a href="" class="links-header">
+				<i class="bi bi-plus-square icone-header"></i>
+				<span>Adiconar valor</span>
+			</a>
+			<a href="" class="links-header">
+				<i class="bi bi-bell icone-header"></i>
+			</a>
+			<a href="" class="links-header">
+				<i class="bi bi-person-circle icone-header"></i>
+			</a>
+		</div>
+	</header>
+	<nav class="flex-box-menu">
+		<div>
+			<h1 class="logo-marca">HealthTrack</h1>
+		</div>
+		<div class="links-nav">
+			<ul>
+				<li class="item-nav">
+					<a href="dashboard.html" class="link-nav ativo">Dashboard</a>
+				</li>
+				<li class="item-nav">
+					<a href="#" class="link-nav">Estatísticas</a>
+				</li>
+				<li class="item-nav">
+					<a href="#" class="link-nav">Investimentos</a>
+				</li>
+				<li class="item-nav">
+					<a href="#" class="link-nav">Cartões de crédito</a>
+				</li>
+			</ul>
+		</div>
+		<div class="categorias-nav">
+			<div class="btn-group">
+				<button class="btn dropdown-toggle" type="button" id="dropdownMenuClickable" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+				  	<span class="titulo-receita-despesa">
+				  		<i class="bi bi-plus-square icone-adicionar-receita-despesa"></i>
+				  		Receitas
+				  	</span>
+				  	<div class="icone-dropdown">
+				  		<i class="bi bi-chevron-down"></i>
+				  	</div>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
+				 	<li><a class="dropdown-item receita-1" href="#"> Salário</a></li>
+					<li><a class="dropdown-item receita-2" href="#"> Outros</a></li>
+				</ul>
+			</div>
+			<div class="btn-group btn-2">
+				<button class="btn dropdown-toggle" type="button" id="dropdownMenuClickable" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+					<span class="titulo-receita-despesa">
+						<i class="bi bi-plus-square icone-adicionar-receita-despesa"></i>
+				Despesas
+					</span>
+					<div class="icone-dropdown">
+						<i class="bi bi-chevron-down"></i>
+					</div>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
+				 	<li><a class="dropdown-item conta-1" href="#"> Contas domésticas</a></li>
+					<li><a class="dropdown-item conta-2" href="#"> Alimentação</a></li>
+					<li><a class="dropdown-item conta-3" href="#"> Transporte</a></li>
+					<li><a class="dropdown-item conta-4" href="#"> Educação</a></li>
+					<li><a class="dropdown-item conta-5" href="#"> Entretenimento</a></li>
+				</ul>
+			</div>
+		</div>
+		<a href="index.html" class="item-nav">
+			<span>Sair</span>
+		</a>
+	</nav>
+	<main>
+		<div class="box-main">
+			<div class="item-1">
+				<section class="saudacao-status">
+					<p>Olá, <span class="destaque-nome">nome</span></p>
+					<p class="destaque-status">Good health! </p>
+					<p>Economia de 20% em relação ao mês anterior</p>
+				</section>
+				<section class="paineis-balanco">
+					<div class="balanco">
+						<h3>Balanço atual </h3>
+						<span class="valor"><span class="detalhe">R$</span> 0000,00</span>
+					</div>
+					<div class="div-receitas-despesas">
+						<div class="receita">
+							<h3>Receitas</h3>
+							<i class="bi bi-plus-lg"></i>
+							<span class="valor"><span class="detalhe">R$</span> 0000,00</span>
+						</div>
+						<div class="despesa">	
+							<h3>Despesas</h3>
+							<i class="bi bi-dash-lg"></i>
+							<span class="valor"><span class="detalhe">R$</span> 0000,00</span>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="box-item-2-3">
+				<div class="item-2">
+					<section class="orcamento">
+						<a href="orcamento.html" class="titulo-section-orcamento">
+							<h2>Orçamento mensal
+								<i class="bi bi-chevron-right"></i>
+							</h2>
+						</a>
+						<div class="grafico-status-orcamento">
+							<svg width="200" height="200" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.5 100C3.35786 100 -0.029254 96.6375 0.281117 92.507C1.0751 81.9404 3.54484 71.5508 7.61205 61.7317C12.6375 49.5991 20.0035 38.5752 29.2893 29.2893C38.5752 20.0035 49.5991 12.6375 61.7317 7.61205C73.8642 2.58658 86.8678 -5.74026e-07 100 0C113.132 5.74026e-07 126.136 2.58658 138.268 7.61205C150.401 12.6375 161.425 20.0035 170.711 29.2893C179.997 38.5752 187.362 49.5991 192.388 61.7317C196.455 71.5508 198.925 81.9404 199.719 92.507C200.029 96.6375 196.642 100 192.5 100V100C188.358 100 185.034 96.6357 184.669 92.5097C183.909 83.9147 181.843 75.4706 178.53 67.4719C174.258 57.1592 167.997 47.7889 160.104 39.8959C152.211 32.0029 142.841 25.7419 132.528 21.4702C122.215 17.1986 111.162 15 100 15C88.8376 15 77.7846 17.1986 67.4719 21.4702C57.1592 25.7419 47.7889 32.0029 39.8959 39.8959C32.0029 47.7889 25.7419 57.1592 21.4702 67.4719C18.1571 75.4706 16.091 83.9146 15.3307 92.5097C14.9657 96.6357 11.6421 100 7.5 100V100Z" fill="url(#paint0_linear_11_331)" fill-opacity="0.3"/>
+								<path d="M7.5 100C3.35786 100 -0.0292721 96.637 0.281041 92.5065C1.81734 72.0572 9.61291 52.5061 22.699 36.5607C37.376 18.6767 57.8 6.43499 80.491 1.92147C103.182 -2.59205 126.736 0.901864 147.14 11.8079C165.332 21.5317 180.016 36.6114 189.261 54.9161C191.128 58.6134 189.286 63.0167 185.459 64.6018V64.6018C181.632 66.1869 177.274 64.3504 175.358 60.6781C167.475 45.5701 155.199 33.1241 140.069 25.0367C122.726 15.7666 102.705 12.7968 83.4173 16.6332C64.13 20.4697 46.7696 30.8752 34.2941 46.0766C23.4103 59.3385 16.832 75.5348 15.3306 92.5095C14.9656 96.6355 11.6421 100 7.5 100V100Z" fill="url(#paint1_linear_11_331)"/>
+								<defs>
+									<linearGradient id="paint0_linear_11_331" x1="3.5" y1="100" x2="200" y2="100" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#75FF7A"/>
+										<stop offset="1" stop-color="#75EEFF"/>
+									</linearGradient>
+									<linearGradient id="paint1_linear_11_331" x1="-91" y1="115" x2="298.914" y2="108.701" gradientUnits="userSpaceOnUse">
+										<stop offset="0.189795" stop-color="#B2FF75"/>
+										<stop offset="0.476966" stop-color="#75FF7A"/>
+										<stop offset="0.805182" stop-color="#75EEFF"/>
+									</linearGradient>
+								</defs>
+								<text x="60" y="65" text-anchor="center" stroke="none" fill="#67757F" class="texto-grafico-orcamento">Você gastou</text>
+								<text x="60" y="90" text-anchor="center" stroke="none" fill="#2E2E2E" class="porcentagem-grafico-orcamento">00,00%</text>
+							</svg>
+							<p>Você tem R$ 000,00 disponíveis pelos próximos 00 dias.</p>
+						</div>
+					</section>
+
+					<section class="objetivos">
+						<div class="titulo-section-objetivos">
+							<h2>Objetivos</h2>
+							<a href=""><i class="bi bi-plus-square"></i></a>
+						</div>
+
+						<div class="box-objetivos">
+							<div class="objetivo">
+								<div class="progresso-grafico-objetivo-1">
+									<svg width="81" height="83" viewBox="0 0 81 83" fill="none" xmlns="http://www.w3.org/2000/svg" >
+										<path d="M78.9569 41.5C80.6345 41.5 82.0057 40.1382 81.886 38.4649C81.3359 30.7769 78.7044 23.3757 74.2596 17.1069C69.2324 10.0167 62.1438 4.73936 54.0096 2.03115C45.8755 -0.677052 37.1134 -0.677051 28.9793 2.03116C20.8451 4.73936 13.7564 10.0167 8.72926 17.1069C3.70207 24.1971 0.994445 32.7361 0.994446 41.5C0.994447 50.2639 3.70207 58.8029 8.72926 65.8931C13.7564 72.9833 20.8451 78.2606 28.9793 80.9688C36.1421 83.3537 43.7919 83.6384 51.071 81.8232C52.7181 81.4124 53.5976 79.6693 53.0845 78.0511V78.0511C52.5609 76.3998 50.789 75.5112 49.1016 75.903C43.0747 77.3023 36.7704 77.0175 30.8565 75.0485C23.9425 72.7465 17.9171 68.2608 13.644 62.2341C9.37093 56.2075 7.06945 48.9494 7.06945 41.5C7.06945 34.0507 9.37093 26.7925 13.644 20.7659C17.9171 14.7392 23.9425 10.2535 30.8565 7.95148C37.7706 5.6495 45.2183 5.6495 52.1324 7.95148C59.0464 10.2535 65.0717 14.7392 69.3449 20.7659C73.0353 25.9707 75.2551 32.0941 75.7919 38.4659C75.9327 40.1376 77.2794 41.5 78.9569 41.5V41.5Z" fill="#75FF7A"/>
+									</svg>
+								</div>
+								<div class="infos-objetivo">
+									<h3>Notebook</h3>
+									<p>R$ 0000,00<span>/R$ 0000,00</span></p>
+									<div class="detalhes-objetivo">
+										<p>Restam 00 dias</p>
+										<a href=""><i class="bi bi-pencil-square"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="objetivo">
+								<div class="progresso-grafico-objetivo-2">
+									<svg width="81" height="83" viewBox="0 0 81 83" fill="none" xmlns="http://www.w3.org/2000/svg" >
+										<path d="M78.9569 41.5C80.6345 41.5 82.0057 40.1382 81.886 38.4649C81.3359 30.7769 78.7044 23.3757 74.2596 17.1069C69.2324 10.0167 62.1438 4.73936 54.0096 2.03115C45.8755 -0.677052 37.1134 -0.677051 28.9793 2.03116C20.8451 4.73936 13.7564 10.0167 8.72926 17.1069C3.70207 24.1971 0.994445 32.7361 0.994446 41.5C0.994447 50.2639 3.70207 58.8029 8.72926 65.8931C13.7564 72.9833 20.8451 78.2606 28.9793 80.9688C36.1421 83.3537 43.7919 83.6384 51.071 81.8232C52.7181 81.4124 53.5976 79.6693 53.0845 78.0511V78.0511C52.5609 76.3998 50.789 75.5112 49.1016 75.903C43.0747 77.3023 36.7704 77.0175 30.8565 75.0485C23.9425 72.7465 17.9171 68.2608 13.644 62.2341C9.37093 56.2075 7.06945 48.9494 7.06945 41.5C7.06945 34.0507 9.37093 26.7925 13.644 20.7659C17.9171 14.7392 23.9425 10.2535 30.8565 7.95148C37.7706 5.6495 45.2183 5.6495 52.1324 7.95148C59.0464 10.2535 65.0717 14.7392 69.3449 20.7659C73.0353 25.9707 75.2551 32.0941 75.7919 38.4659C75.9327 40.1376 77.2794 41.5 78.9569 41.5V41.5Z" fill="#75FF7A"/>
+									</svg>
+								</div>
+								<div class="infos-objetivo">
+									<h3>Casa nova</h3>
+									<p>R$ 0000,00<span>/R$ 0000,00</span></p>
+									<div class="detalhes-objetivo">
+										<p>Restam 00 dias</p>
+										<a href=""><i class="bi bi-pencil-square"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="item-3">
+					<section class="calendario-contas">
+						<h2>Contas pendentes</h2>
+						<div class="calendario-mes-periodo">
+							<h3>Junho de 2022</h3>
+							<a href="">
+								<p class="periodo-calendario">
+									sem 19-25 
+									<i class="bi bi-sliders2"></i>
+								</p>
+							</a>
+						</div>
+						<div class="dias-semana">
+								<div>DOM</div>
+								<div>SEG</div>
+								<div>TER</div>
+								<div>QUA</div>
+								<div>QUI</div>
+								<div class="dia-ativo">SEX</div>
+								<div>SAB</div>
+						</div>
+						<div class="dias-numeros">
+								<div>19</div>
+								<div>20</div>
+								<div>21</div>
+								<div>22</div>
+								<div>23</div>
+								<div class="dia-ativo">24</div>
+								<div>25</div>
+						</div>
+						<ul>
+							<div class="emoji-conta-pendente conta-pendente-1">
+								<li class="item-conta-pendente">
+									<h3>Contas Domésticas</h3>
+									<a href="#">
+										<h4>Eletricidade</h4>
+										<p>R$00,00</p>
+									</a>
+								</li>
+							</div>
+							<div class="emoji-conta-pendente conta-pendente-2">
+								<li class="item-conta-pendente">
+									<h3>Cartão de crédito</h3>
+									<a href="#">
+										<h4>Fatura Nubank</h4>
+										<p>R$000,00</p>
+									</a>
+								</li>
+							</div>
+						</ul>
+					</section>
+
+					<section class="historico">
+						<a href="" class="titulo-section-historico">
+							<h2 >Histórico
+								<i class="bi bi-chevron-right"></i>
+							</h2>
+						</a>
+						<div class="lista-movimentacoes">
+							<p class="dia-movimentacao-historico">Hoje</p>
+							<ul>
+								<div class="item-lista-movimentacoes">
+									<i class="bi bi-arrow-up-right"></i>
+									<li class="conta-movimentacao">
+										<h3>Alimentação</h3>
+										<div class="infos-movimentacao">
+											<p class="titulo-movimentacao">iFood </p>
+											<p class="data-movimentacao">24/06 as 18:30 </p>
+											<p class="valor-movimentacao">R$ 00,00</p>
+										</div>
+									</li>
+								</div>
+							</ul>
+							<p class="dia-movimentacao-historico">Ontem</p>
+							<ul>
+								<div class="item-lista-movimentacoes">
+									<i class="bi bi-arrow-up-right"></i>
+									<li class="conta-movimentacao">
+										<h3>Transporte</h3>
+										<div class="infos-movimentacao">
+											<p class="titulo-movimentacao">Uber </p>
+											<p class="data-movimentacao">23/06 as 11:10 </p>
+											<p class="valor-movimentacao">R$ 00,00</p>
+										</div>
+									</li>
+								</div>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

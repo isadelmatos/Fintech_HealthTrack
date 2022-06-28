@@ -1,0 +1,963 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+:root {
+	font-family: 'Poppins', sans-serif;
+	line-height: 30px;
+	background: #FFF;
+	--cor-base-texto: #2E2E2E;
+	--cor-secundaria-texto: #67757F;
+	--cor-verde-health-track: #75FF7A;
+	--cor-verde-ativo: rgba(117, 255, 122, 0.2);
+	--cor-vermelho-health-track:  #F38E8E;
+	--cor-detalhe-sections: #EDEDED;
+	--background-sections: #FFFFFF;
+	--borda-sections: 1px solid #E0E0E0;
+	--sombra-sections:  0px 0px 10px rgba(0, 0, 0, 0.1);
+	--borda-curvatura-sections: 15px;
+	--fonte-grande-responsiva: 1.15em;
+	--fonte-media-responsiva: 0.9em;
+	--fonte-pequena-responsiva: 0.75em;
+
+}
+
+a {
+	text-decoration: none;
+	color: var(--cor-base-texto);
+}
+
+.links-header:hover, .titulo-section-orcamento h2:hover, .titulo-section-objetivos a:hover, .detalhes-objetivo a:hover, .titulo-section-historico h2:hover {
+	color: var(--cor-secundaria-texto);
+	transition: 0.2s ease-out;
+}
+
+.header {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em 9em 0 0;
+}
+
+.links-header {
+	text-decoration: none;
+	color: var(--cor-base-texto);
+	font-size: 1.15em;
+	font-weight: 600;
+	margin-left: 2em;
+}
+
+.icone-header {
+	font-size: 1.25em;
+	padding-right: 0.25em;
+}
+
+.item-nav .ativo {
+	color: var(--cor-verde-health-track);
+}
+
+.box-main {
+	width: calc(100% - 280px);
+	margin-left: auto;
+}
+
+.item-1 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 4em 0;	
+}
+
+.saudacao-status {
+	width: 30vw;
+	margin-right: 4em;
+}
+
+.saudacao-status p {
+	font-size: 1.25em;
+	font-weight: 500;
+	margin-bottom: 1.25em;
+	color: var(--cor-base-texto);
+}
+
+.saudacao-status .destaque-nome {
+	font-weight: 700;
+}
+
+.saudacao-status .destaque-status {
+	font-size: 1.25em;
+	font-weight: 700;
+	color: var(--cor-verde-health-track);
+	margin-bottom: 0.5em;
+}
+
+.destaque-status::after {
+	content: "\01F911";
+}
+
+.paineis-balanco {
+	width: 30vw;
+	background: var(--background-sections);
+	border: var(--borda-sections);
+	box-shadow: var(--sombra-sections);
+	border-radius: var(--borda-curvatura-sections);
+	display: flex;
+	flex-direction: column;
+	padding: 1em 5em 1em 4em;
+}
+
+.balanco {
+	margin: 1em 0;
+}
+
+.div-receitas-despesas {
+	margin: 1em 0;
+	display: flex;
+}
+
+.balanco h3, .receita h3, .despesa h3 {
+	font-size: 1em;
+	font-weight: 500;
+	color: var(--cor-base-texto);
+}
+
+.balanco span {
+	font-weight: 700;
+	font-size: 1.5em;
+	color: var(--cor-base-texto);
+}
+
+.receita {
+	padding-right: 2em;
+}
+
+.receita h3, .despesa h3 {
+	color: var(--cor-secundaria-texto);
+}
+
+.receita .valor , .despesa .valor {
+	font-size: 1.25em;
+	font-weight: 600;
+	color: var(--cor-secundaria-texto);
+}
+
+.balanco .detalhe, .receita .detalhe, .despesa .detalhe {
+	font-size: 0.70em;
+}
+
+.receita i, .despesa i {
+	font-size: 1.25em;
+}
+
+.receita i {
+	color: var(--cor-verde-health-track);
+}
+
+.despesa i {
+	color: var(--cor-vermelho-health-track);
+}
+
+.box-item-2-3 {
+	display: flex;
+	justify-content: center;
+}
+
+.item-2 {
+	margin-right: 4em;
+}
+
+.orcamento {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 30vw;
+	background: var(--background-sections);
+	border: var(--borda-sections);
+	box-shadow: var(--sombra-sections);
+	border-radius: var(--borda-curvatura-sections);
+	padding: 2em 0;
+}
+
+.titulo-section-orcamento h2, .titulo-section-objetivos h2, .calendario-contas h2, .titulo-section-historico h2{
+	font-size: 1.15em;
+	font-weight: 700;
+	color: var(--cor-base-texto);
+}
+
+.titulo-section-orcamento h2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 0 3em;
+	width: 100%;
+	margin-left: 1em;
+}
+
+.titulo-section-orcamento h2 i {
+	font-size: 1.15em;
+}
+
+.texto-grafico-orcamento {
+	font-size: 0.75em;
+	font-weight: 600;
+}
+
+.porcentagem-grafico-orcamento {
+	font-size: 1.25em;
+	font-weight: 700;
+}
+
+.grafico-status-orcamento p {
+	font-size: 1em;
+	font-weight: 500;
+	color: var(--cor-base-texto);
+	max-width: 18vw;
+}
+
+.objetivos {
+	width: 30vw;
+	margin: 2em 0;
+	padding: 2em 0;
+	background: var(--background-sections);
+	border: var(--borda-sections);
+	box-shadow: var(--sombra-sections);
+	border-radius: var(--borda-curvatura-sections);
+}
+
+.titulo-section-objetivos {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 3em;
+	margin-bottom: 1em;
+	color: var(--cor-base-texto);
+}
+
+.titulo-section-objetivos a {
+	font-size: 1.8em;
+}
+
+.objetivo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*.box-objetivos {
+}*/
+
+.progresso-grafico-objetivo-1, .progresso-grafico-objetivo-2 {
+	position: relative;
+	margin-right: 2em;
+}
+
+.progresso-grafico-objetivo-1::after  {
+	content: "\01F4BB";
+	font-size: 2em;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.progresso-grafico-objetivo-2::after {
+	content: "\01F511";
+	font-size: 2em;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.infos-objetivo {
+	margin: 1em 0;
+}
+
+.infos-objetivo h3 {
+	font-size: 1.25em;
+	font-weight: 600;
+	color: var(--cor-base-texto);
+	margin: 0.5em 0;
+}
+
+.infos-objetivo p {
+	font-size: 1em;
+	font-weight: 600;
+	color: var(--cor-base-texto);
+}
+
+.infos-objetivo p span {
+	color: var(--cor-secundaria-texto);
+}
+
+.detalhes-objetivo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1em 0;
+}
+
+.detalhes-objetivo p {
+	font-size: 0.9em;
+	font-weight: 500;
+	color: var(--cor-base-texto);
+	background-color: var(--cor-detalhe-sections);
+	padding: 0.5em 0.75em;
+	border-radius: 5px;
+}
+
+.detalhes-objetivo i {
+	font-size: 1.25em;
+}
+
+.calendario-contas {
+	width: 30vw;
+	margin-bottom: 2em;
+	padding: 2rem 2rem;
+	background: var(--background-sections);
+	border: var(--borda-sections);
+	box-shadow: var(--sombra-sections);
+	border-radius: var(--borda-curvatura-sections);
+}
+
+.calendario-contas h2 {
+	margin-bottom: 2em;
+}
+
+.calendario-mes-periodo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-bottom: 2em;
+}
+
+.calendario-mes-periodo h3 {
+	font-weight: 600;
+	font-size: 1.15em;
+	color: var(--cor-base-texto);
+}
+
+.calendario-mes-periodo p{
+	font-size: 1em;
+	font-weight: 500;
+	color: var(--cor-base-texto);
+	background-color: var(--cor-detalhe-sections);
+	border-radius: 10px;
+	padding: 0.25em 1em;
+}
+
+.periodo-calendario i{
+	font-size: 1.15em;
+}
+
+.dias-semana {
+	font-size: 0.9em;
+	font-weight: 500;
+	color: var(--cor-base-texto);
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	text-align: center;
+	align-items: baseline;
+	margin-bottom: 1em;
+	padding: 1em 0;
+}
+
+.dias-numeros{
+	font-size: 1.15em;
+	font-weight: 500;
+	color: var(--cor-base-texto);
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	text-align: center;
+	align-items: baseline;
+}
+
+.dias-semana .dia-ativo, .dias-numeros .dia-ativo {
+	color: var(--cor-verde-health-track);
+	background-color: var(--cor-verde-ativo);
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 0.5em 0;
+}
+
+.dias-semana div:hover, .dias-numeros div:hover {
+	color: var(--cor-verde-health-track);
+	background-color: var(--cor-verde-ativo);
+	border-radius: 10px;
+	padding: 0.5em 0;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.emoji-conta-pendente {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	grid-gap: 1em;
+	padding: 0.5 2em;
+	margin-top: 2em;
+}
+
+.conta-pendente-1::before {
+	content: "\01F3E1";
+	font-size: 1.5em;
+	background-color: #FCF5CE;
+	border-radius: 5px;
+	padding: 0.5em;
+}
+
+.item-conta-pendente h3 {
+	font-weight: 600;
+	font-size: 1.15em;
+	color: var(--cor-base-texto);
+	margin-bottom: 0.75em;
+}
+
+
+.item-conta-pendente a {
+	font-weight: 500;
+	font-size: 1em;
+	color: var(--cor-base-texto);
+	display: flex;
+	justify-content: space-between;
+}
+
+.item-conta-pendente a h4 {
+	position: relative;
+}
+
+.item-conta-pendente a h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background-color: #FFC9C9;;	
+	border-radius: 10px;
+	transition: width 0.25s ease-out;
+}
+
+.item-conta-pendente a h4:hover::before {
+	width: 100%;
+}
+
+.item-conta-pendente a p {
+	position: relative;
+	color: var(--cor-vermelho-health-track);
+}
+
+.item-conta-pendente a p::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background-color: #FFC9C9;;	
+	border-radius: 10px;
+	transition: width 0.25s ease-out;
+}
+
+.item-conta-pendente a p:hover::before {
+	width: 100%;
+}
+
+.conta-pendente-2::before {
+	content: "\01F4B3";
+	font-size: 1.5em;
+	background-color: #FFC8E6;
+	border-radius: 5px;
+	padding: 0.5em;
+}
+
+.historico {
+	width: 30vw;
+	padding: 2em 3em;
+	background: var(--background-sections);
+	border: var(--borda-sections);
+	box-shadow: var(--sombra-sections);
+	border-radius: var(--borda-curvatura-sections);
+}
+
+.titulo-section-historico h2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.titulo-section-historico h2 i {
+	font-size: 1.15em;
+}
+
+.lista-movimentacoes .dia-movimentacao-historico {
+	font-size: 1.1em;
+	font-weight: 600;
+	color: var(--cor-secundaria-texto);
+	margin: 1.5em 0;
+}
+
+.item-lista-movimentacoes{
+	display: flex;
+}
+
+.item-lista-movimentacoes i {
+	color: var(--cor-vermelho-health-track);
+	font-size: 1.5em;
+	margin-right: 0.5em;
+}
+
+.conta-movimentacao {
+	width: 90%;
+}
+
+.conta-movimentacao h3 {
+	font-size: 1em;
+	color: var(--cor-base-texto);
+	font-weight: 600;
+	margin-bottom: 0.25em;
+}
+
+.infos-movimentacao {
+	display: flex;
+}
+
+.conta-movimentacao p, .data-movimentacao, .valor-movimentacao {
+	font-size: 1em;
+	color: var(--cor-base-texto);
+	font-weight: 500;
+}
+
+.infos-movimentacao .data-movimentacao {
+	color: var(--cor-secundaria-texto);
+	margin-left: 0.5em;
+}
+
+.infos-movimentacao .valor-movimentacao {
+	color: var(--cor-vermelho-health-track);
+	margin-left: auto;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+
+	.header {
+		margin: 0;
+	}
+
+	.links-header span {
+		display: none;
+	}
+
+	.box-main {
+		width: 90%;
+		margin: 2em 0 5em 2em;
+		box-sizing: border-box;
+	} 
+
+	.item-1 {
+		flex-direction: column;
+		margin: 3em 0;
+	}
+
+	.item-2 {
+		margin-right: 0;
+	}
+
+	.box-item-2-3  {
+		flex-direction: column;
+	}
+
+	.saudacao-status {
+		margin-right: 0;
+	}
+
+	.saudacao-status, .paineis-balanco, .orcamento, .objetivos, .calendario-contas, .historico {
+		width: 85vw;
+		border: none;
+	}
+
+	.paineis-balanco {
+		padding: 1em;
+	}
+
+	.saudacao-status p, .saudacao-status .destaque-status {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.balanco h3, .receita h3, .despesa h3, .receita .valor, .despesa .valor {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.balanco span {
+		font-size: 1.25em;
+	}
+
+	.orcamento {
+		margin: 1em 0 5em 0;
+	}
+
+	.titulo-section-orcamento {
+		padding: 0 0.9em;
+	}
+
+	.titulo-section-orcamento h2 {
+		padding: 0;
+		margin-left: 0;
+	}
+
+	.grafico-status-orcamento p {
+		max-width: 75vw;
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.objetivos {
+		margin: 3em 0;
+	}
+
+	.titulo-section-objetivos {
+		padding: 0 2em;
+		margin-bottom: 1em;
+	}
+
+	.objetivo {
+		flex-direction: column;
+		margin-top: 2.5em;
+	}
+
+
+	.progresso-grafico-objetivo-1, .progresso-grafico-objetivo-2 {
+		margin-right: 0;
+	}
+
+	.infos-objetivo {
+		text-align: center;
+	}
+
+	.infos-objetivo h3 {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.infos-objetivo p {
+		font-size: var(--fonte-pequena-responsiva);
+	}
+
+	.calendario-contas {
+		margin-bottom: 3em;
+		padding: 2em 1em;
+	}
+
+	.calendario-mes-periodo {
+		justify-content: center;
+	}
+
+	.calendario-mes-periodo h3 {
+		font-size: var(--fonte-media-responsiva);
+		margin-bottom: 1em;
+		margin-right: 1em;
+	}
+
+	.calendario-mes-periodo p {
+		font-size: var(--fonte-pequena-responsiva);
+	}
+
+	.dias-semana {
+		font-size: 0.75em;
+		grid-gap: 5px;
+		margin-bottom: 0;
+		padding: 0;
+	}
+
+	.dias-numeros {
+		font-size: var(--fonte-media-responsiva);
+		margin-bottom: 3em;
+	}
+
+	.conta-pendente-1::before, .conta-pendente-2::before {
+		font-size: var(--fonte-grande-responsiva);
+		align-self: center;
+	}
+
+	.item-conta-pendente h3 {
+		font-size: var(--fonte-media-responsiva);
+		margin-bottom: 0.25em;
+	}
+
+	.item-conta-pendente a {
+		font-size: var(--fonte-pequena-responsiva);
+	}
+
+	.historico {
+		padding: 2em 1em;
+		margin-bottom: 4em;
+	}
+
+	.lista-movimentacoes .dia-movimentacao-historico, .conta-movimentacao h3 {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.conta-movimentacao p, .data-movimentacao, .valor-movimentacao {
+		font-size: var(--fonte-pequena-responsiva);
+	}
+
+	.infos-movimentacao {
+		justify-content: space-between;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+
+	.header {
+		margin: 0;
+	}
+
+	.links-header span {
+		display: none;
+	}
+
+	.item-1{
+		flex-direction: column;
+	}
+
+	.box-main {
+		width: 90vw;
+		margin: 2em 0 10em 2em;
+	} 
+
+	.item-1 {
+		margin: 3em 0;
+	}
+
+	.item-2 {
+		margin-right: 0;
+	}
+
+	.box-item-2-3  {
+		flex-direction: column;
+	}
+
+	.saudacao-status {
+		margin-right: 0;
+	}
+
+	.saudacao-status, .paineis-balanco, .orcamento, .objetivos, .calendario-contas, .historico {
+		width: 85vw;
+		border: none;
+	}
+
+	.paineis-balanco {
+		padding: 1em;
+	}
+
+	.saudacao-status p, .saudacao-status .destaque-status {
+		font-size: var(--fonte-grande-responsiva);
+	}
+
+	.balanco h3, .receita h3, .despesa h3, .receita .valor, .despesa .valor {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.balanco span {
+		font-size: 1.25em;
+	}
+
+	.orcamento {
+		margin: 1em 0 5em 0;
+	}
+
+	.titulo-section-orcamento {
+		padding: 0 2em;
+	}
+
+	.grafico-status-orcamento p {
+		max-width: 75vw;
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.objetivos {
+		margin-bottom: 5em;
+	}
+
+	.titulo-section-objetivos {
+		padding: 0 2em;
+		margin-bottom: 1em;
+	}
+
+	.objetivo {
+		margin-top: 2em;
+	}
+
+	.progresso-grafico-objetivo-1, .progresso-grafico-objetivo-2 {
+		margin-right: 4em;
+	}
+
+	.infos-objetivo {
+		text-align: center;
+	}
+
+	.infos-objetivo h3 {
+		font-size: var(--fonte-grande-responsiva);
+	}
+
+	.infos-objetivo p {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.calendario-contas {
+		margin-bottom: 5em;
+	}
+
+	.calendario-mes-periodo {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.calendario-mes-periodo h3 {
+		font-size: var(--fonte-grande-responsiva);
+		margin-bottom: 1em;
+		margin-right: 1em;
+	}
+
+	.calendario-mes-periodo p {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.dias-semana {
+		font-size: 0.75em;
+		grid-gap: 5px;
+		padding: 0;
+	}
+
+	.dias-numeros {
+		font-size: var(--fonte-media-responsiva);
+		margin-bottom: 3em;
+	}
+
+	.conta-pendente-1::before, .conta-pendente-2::before {
+		font-size: var(--fonte-grande-responsiva);
+		align-self: center;
+	}
+
+	.item-conta-pendente h3 {
+		font-size: var(--fonte-media-responsiva);
+		margin-bottom: 0.25em;
+	}
+
+	.item-conta-pendente a {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.historico {
+		padding: 2em;
+	}
+
+	.lista-movimentacoes .dia-movimentacao-historico, .conta-movimentacao h3 {
+		font-size: 1em;
+	}
+
+	.conta-movimentacao p, .data-movimentacao, .valor-movimentacao {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.infos-movimentacao {
+		justify-content: space-between;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+	
+	.header {
+		margin-right: 3em;
+	}
+
+	.box-main {
+		width: 90vw;
+		margin-right: 2em;
+	}
+
+	.saudacao-status, .paineis-balanco, .orcamento, .objetivos, .calendario-contas, .historico {
+		width: 45vw;
+		border: none;
+	}
+
+	.saudacao-status {
+		margin-right: 0;
+	}
+
+	.grafico-status-orcamento p {
+		max-width: 70vw;
+	}
+
+	.balanco h3, .receita h3, .despesa h3, .receita .valor, .despesa .valor {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.conta-movimentacao p, .data-movimentacao, .valor-movimentacao {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.infos-objetivo h3 {
+		font-size: var(--fonte-grande-responsiva);
+	}
+
+	.calendario-mes-periodo {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.calendario-mes-periodo h3 {
+		margin-bottom: 1em;
+	}
+
+	.dias-semana {
+		padding: 0;
+	}
+
+	.dias-numeros {
+		margin-bottom: 3em;
+	}
+
+	.item-conta-pendente h3 {
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+
+	.header {
+		margin-right: 3em;
+	}
+
+	.saudacao-status {
+		margin-right: 2em;
+	}
+
+	.receita .valor, .despesa .valor {
+		font-size: var(--fonte-grande-responsiva);
+	}
+
+	.conta-movimentacao p, .data-movimentacao, .valor-movimentacao {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.infos-objetivo h3 {
+		font-size: var(--fonte-grande-responsiva);
+	}
+
+	.calendario-mes-periodo {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.calendario-mes-periodo h3 {
+		margin-bottom: 1em;
+	}
+
+	.dias-semana {
+		padding: 0;
+	}
+
+	.dias-numeros {
+		margin-bottom: 3em;
+	}
+
+	.item-conta-pendente h3 {
+		font-size: 1em;
+	}
+
+}

@@ -1,0 +1,187 @@
+:root {
+	--gradiente-health-track: background: linear-gradient(93.7deg, #75FF7A 16%, #75EEFF 90.95%);
+	--background-menu: #101010;
+	--cor-item-menu: #F2F2F2;
+	--cor-verde-health-track: #75FF7A;
+}
+
+a {
+	text-decoration: none;
+	color: var(--cor-base-texto);
+}
+
+.item-nav a:hover, .item-nav span:hover, .icone-adicionar-receita-despesa:hover, .dropdown-menu .dropdown-item:hover {
+	color: var(--cor-verde-health-track);
+	transition: 0.3s ease-out;
+}
+
+
+#check {
+	display: none;
+}
+
+.icone-menu #colapse-menu{
+	display: none;
+	left: 0;
+	margin-top: 1em;
+	transition: 0.3s ease-out;
+}
+
+#colapse-menu {
+	font-size: 2em;
+}
+
+.icone-menu:hover {
+	color: #67757F;
+	cursor: pointer;
+}
+
+
+#check:checked ~ .icone-menu {
+	margin-left: 16em;
+	transition: 0.3s ease-out;
+}
+
+#check:checked ~ .flex-box-menu {
+	left: 0;
+	transition: 0.4s ease-out;
+}
+
+.flex-box-menu {
+	position: fixed;
+	height: 100vh;
+	width: 280px;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background: var(--background-menu);
+	z-index: 100;
+	padding: 2em;
+	box-sizing: border-box;
+}
+
+.flex-box-menu .logo-marca {
+	font-size: 1.5em;
+	font-weight: 900;
+	line-height: 2em;
+	background: linear-gradient(93.7deg, #75FF7A 16%, #75EEFF 90.95%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul .item-nav {
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 1.5em;
+	margin: 2em 0;
+}
+
+.item-nav a, .item-nav span {
+	color: var(--cor-item-menu);
+}
+
+.btn-group {
+	margin-bottom: 5em;
+}
+
+.btn-group, .btn-group-vertical {
+	display: block;
+}
+
+.btn-group-vertical>.btn, .btn-group>.btn {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+}
+
+.btn {
+	--bs-btn-border-color: none;
+	padding: 0;
+}
+
+
+.dropdown-toggle::after {
+	display: none;
+	padding: 0;
+}
+
+.dropdown-menu {
+	width: 220px;
+	height: 70px;
+	overflow-y: auto;
+}
+
+.dropdown-item {
+	padding: 0.5em 1em;
+}
+
+.titulo-receita-despesa {
+	font-weight: 600;
+	color: var(--cor-item-menu);
+}
+
+.icone-adicionar-receita-despesa {
+	font-size: 1.25em;
+    padding-right: 0.25em;
+}
+
+.icone-dropdown {
+	margin-left: auto;
+	color: var(--cor-item-menu);
+}
+
+.bi-chevron-down {
+	margin-left: auto;
+}
+
+.dropdown-menu {
+	--bs-dropdown-border-color:  none;
+	--bs-dropdown-link-hover-bg: #FFF;
+	--bs-dropdown-link-active-bg: #FFF;
+}
+
+.sub-menu {
+	display: none;
+}
+
+.receita-1::before {
+	content: "\01F4B8";
+}
+
+.receita-2::before {
+	content: "\01F52B";
+}
+
+.conta-1::before {
+	content: "\01F3E1";
+}
+
+.conta-2::before {
+	content: "\01F354";
+}
+
+.conta-3::before {
+	content: "\01F698";
+}
+
+.conta-4::before {
+	content: "\01F393";
+}
+
+.conta-5::before {
+	content: "\01F389";
+}
+
+@media screen and (max-width: 1200px) {
+	.icone-menu #colapse-menu {
+		display: inline-flex;
+		margin-left: 1em;
+	}
+
+	.flex-box-menu {
+		left: -280px;
+		transition: 0.4s ease-out;
+	}
+}

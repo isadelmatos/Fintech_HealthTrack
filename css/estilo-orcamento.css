@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap');
+
+:root {
+	font-family: 'Poppins', sans-serif;
+	line-height: 30px;
+	--cor-base-texto: #2E2E2E;
+	--cor-secundaria-texto: #67757F;
+	--cor-linhas-tabela: #D2D2D2;
+	--cor-hover-tabela: #F4F4F4;
+	--cor-fundo-status-1: #BEFBC1;
+	--cor-fundo-status-2: #C4F4FB;
+	--cor-fundo-status-3: #FFC7C7;
+	--tamanho-emojis: 1.3em;
+	--fonte-grande-responsiva: 1.15em;
+	--fonte-media-responsiva: 0.9em;
+	--fonte-pequena-responsiva: 0.75em;
+}
+
+a {
+	text-decoration: none;
+	color: var(--cor-base-texto);
+}
+
+.header {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em 9em 0 0;
+}
+
+.links-header:hover, .titulo-topo-orcamento a .titulo-pagina:hover, .titulo-mes-dias i:hover {
+	color: var(--cor-secundaria-texto);
+	transition: 0.2s ease-out;
+}
+
+.circulo-progresso a:hover, th .bi-eye:hover {
+	color: var(--cor-base-texto);
+	transition: 0.2s ease-out;
+}
+
+.links-header {
+	text-decoration: none;
+	color: var(--cor-base-texto);
+	font-size: 1.15em;
+	font-weight: 600;
+	margin-left: 2em;
+}
+
+.icone-header {
+	font-size: 1.25em;
+	padding-right: 0.25em;
+}
+
+.box-main {
+	width: calc(100% - 280px);
+	margin-left: auto;
+}
+
+.titulo-pagina {
+	display: inline-flex;
+	align-items: center;
+	margin-left: 4em;
+}
+
+h2 .icone-voltar {
+	margin-right: 0.75em;
+}
+
+.titulo-pagina {
+	color: var(--cor-base-texto);
+	font-weight: 700;
+	font-size: 1.4em;
+	line-height: 36px;
+}
+
+.grafico-e-infos-orcamento {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.titulo-mes-dias {
+	margin-bottom: 3em;
+}
+
+.titulo-mes-dias a {
+	text-decoration: none;	
+}
+
+.titulo-mes-dias i {
+	margin-left: 0.75em;
+	color: var(--cor-base-texto);
+}
+
+.grafico-e-infos-orcamento .titulo-mes-dias h3 {
+	font-size: 1.25em;
+	font-weight: 600;
+	text-align: center;
+	color: var(--cor-base-texto);
+	margin-bottom: 1em;
+}
+
+.grafico-e-infos-orcamento .titulo-mes-dias p {
+	font-size: 1em;
+	font-weight: 600;
+	color: var(--cor-secundaria-texto);
+}
+
+.grafico-e-totais {
+	display: flex;
+	align-items: center;
+}
+
+.circulo-progresso {
+	position: relative;
+  	text-align: center;
+	width: 220px;
+	height: 220px;
+	background-image: url(../imgs/grafico-orcamento.png);
+}
+
+.circulo-progresso p {
+	position: absolute;
+ 	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: fit-content;
+	line-height: 27px;
+	font-size: 1.1em;
+	font-weight: 600;
+	color: var(--cor-secundaria-texto);
+}
+
+.circulo-progresso a {
+	position: absolute;
+ 	top: 68%;
+	left: 35%;
+	color: var(--cor-secundaria-texto);
+}
+
+.circulo-progresso .pocento-progresso {
+	font-size: 1.25em;
+	font-weight: 700;
+	color: var(--cor-base-texto);
+}
+
+.totais {
+	margin-left: 6em;
+}
+
+.totais div {
+	margin-bottom: 2em;
+}
+
+.totais div h4 {
+	font-size: 1em;
+	font-weight: 500;
+	color: var(--cor-base-texto);
+	margin-bottom: 0.75em;
+}
+
+.totais div span {
+	font-size: 1.25em;
+	font-weight: 600;
+	color: var(--cor-base-texto);
+}
+
+.categorias-e-infos-orcamento .wrapper {
+	display: flex;
+	justify-content: center;
+	margin: 5em 0;
+}
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	/*width: 100%;*/
+}
+
+table .item-tabela:hover {
+	background-color: var(--cor-hover-tabela);
+}
+
+.titulos-tabela th,  .item-tabela td {
+	border-bottom: 1px solid var(--cor-linhas-tabela);
+	padding:1em 3em;
+}
+
+th .bi-eye {
+	margin-left: 0.5em;
+	cursor: pointer;
+}
+
+.titulos-tabela th {
+	font-size: 1.1em;
+	font-weight: 600;
+	color: var(--cor-secundaria-texto);
+	text-align: left;
+}
+
+.item-tabela td {
+	font-weight: 500;
+	color: var(--cor-base-texto);
+}
+
+.categoria-1 p::before {
+	content: "\01F3E1";
+	font-size: var(--tamanho-emojis);
+}
+
+.categoria-2 p::before {
+	content: "\01F354";
+	font-size: var(--tamanho-emojis);
+}
+
+.categoria-3 p::before {
+	content: "\01F698";
+	font-size: var(--tamanho-emojis);
+}
+
+.categoria-4 p::before {
+	content: "\01F393";
+	font-size: var(--tamanho-emojis);
+}
+
+.categoria-5 p::before {
+	content: "\01F389";
+	font-size: var(--tamanho-emojis);
+}
+
+.item-tabela .emoji p::before {
+	padding-right: 0.5em;
+}
+
+
+.status-1 {
+	background-color: var(--cor-fundo-status-1);
+}
+
+.status-2 {
+	background-color: var(--cor-fundo-status-2);
+}
+
+.status-3 {
+	background-color: var(--cor-fundo-status-3);
+}
+
+.status {
+	border-radius: 5px;
+	text-align: center;
+	padding: 0.25em 0.5em;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+
+	.header {
+		margin: 0 2em 0 0;
+	}
+
+	.links-header span {
+		display: none;
+	}
+
+	.box-main {
+		width: 95vw;
+		margin: 0 1em;
+	}
+
+	.titulo-topo-orcamento a {
+		margin: 3em 0;
+	}
+
+	.titulo-pagina {
+		margin: 2em 0 2em 1em;
+	}
+
+	.titulo-pagina, .grafico-e-infos-orcamento .titulo-mes-dias h3 {
+		font-size: var(--fonte-grande-responsiva);
+	}
+
+	.grafico-e-infos-orcamento .titulo-mes-dias p {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.grafico-e-totais {
+		flex-direction: column;
+	}
+
+	.totais {
+		margin-left: 0;
+		margin-top: 4em;
+		display: flex;
+    	flex-wrap: wrap;
+    	justify-content: center;
+	}
+
+	.totais div {
+		margin: 0 2em 2em 0;
+		text-align: center;
+	}
+
+	.totais div h4 {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	.totais div span {
+		font-size: var(--fonte-grande-responsiva);
+	}
+
+	table {
+		width: 100%;
+		table-layout: auto;
+
+	}
+
+	.titulos-tabela th p, .item-tabela td p {
+		width: max-content;
+	}
+
+	.categorias-e-infos-orcamento .wrapper  {
+		overflow-x: auto;
+		justify-content: start;
+		margin: 2em 0;
+	}
+
+	.item-tabela .emoji {
+		position: relative;
+	}
+
+	.item-tabela .emoji::before {
+		position: absolute;
+		left: 15px;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+	.titulo-pagina {
+		margin-left: 3em;
+	}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+
+
+	.titulo-pagina, .grafico-e-infos-orcamento .titulo-mes-dias h3 {
+		font-size: var(--fonte-grande-responsiva);
+	}
+
+	.titulo-pagina {
+		margin-top: 2em;
+	}
+
+	.links-header span, .grafico-e-infos-orcamento .titulo-mes-dias p {
+		font-size: var(--fonte-media-responsiva);
+	}
+
+	table {
+		width: 100%;
+		table-layout: auto;
+		margin-left: 3em;
+
+	}
+
+	.titulos-tabela th p, .item-tabela td p {
+		width: max-content;
+	}
+
+	.categorias-e-infos-orcamento .wrapper  {
+		overflow-x: auto;
+		justify-content: start;
+		margin: 2em 0;
+	}
+
+}

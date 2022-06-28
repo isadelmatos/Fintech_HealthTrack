@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #FFF;
+	color: #2e2e2e;
+	line-height: 30px;
+}
+
+.container-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-slogan {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 1em 0;
+}
+
+.logo-titulo {
+	font-weight: 900;
+	font-size: 1.5em;
+	line-height: 36px;
+	margin-bottom: 1em;
+}
+
+.logo-titulo-destaque {
+	background: linear-gradient(93.7deg, #75FF7A 16%, #75EEFF 90.95%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.texto-slogan {
+	font-weight: 600;
+	font-size: 1.25em;
+	max-width: 370px;
+	text-align: center;
+}
+
+.forumulario-login {
+	display: flex;
+	flex-direction: column;
+}
+
+.label-form {
+	font-weight: 500;
+	font-size: 1.25em;
+}
+
+.input {
+	width: 500px;
+	padding: 1em 1em;
+	border: 2px solid #2E2E2E;
+	border-radius: 20px;
+	margin: 1em 0;
+}
+
+.link-esqueci-senha {
+	text-decoration: none;
+	margin-left: auto;
+	margin-bottom: 2em;
+	font-weight: 500;
+	font-size: 1em;
+	line-height: 24px;
+	color: #2e2e2e;
+}
+
+.link-esqueci-senha:hover {
+	text-decoration-line: underline;
+}
+
+.input-submit {
+	cursor: pointer;
+	font-family: "Poppins", sans-serif;
+	font-size: 1em;
+	padding: 0.75em 0;
+	background-color: #2E2E2E;
+	border: none;
+	color: #FFF;
+	border-radius: 20px;
+	margin: 1em 0;
+}
+
+.link-criar-conta {
+	font-weight: 500;
+	font-size: 1.15em;
+	line-height: 27px;
+	text-align: center;
+}
+
+
+
+.link-criar-conta a{
+	text-decoration: none;
+	font-weight: 700;
+	color: #2e2e2e;
+}
+
+.link-criar-conta a:hover {
+	text-decoration-line: underline;
+}
+
+.img-bg {
+	height: 80vh;
+}
+
+@media screen and (min-width: 320px) and (max-width:  400px) {
+	.container-flex {
+		flex-wrap: wrap-reverse;
+		overflow-x: hidden;
+		margin-bottom: 6em;
+	}
+
+	.texto-slogan {
+		font-size: 1em;
+		max-width: 250px;
+	}
+
+	.label-form {
+		font-size: 1em;
+	}
+
+	.input {
+		width: 250px;
+		padding: 1em 0.75em;
+	}
+
+	.input-submit {
+		padding: 0.5em 0;
+
+	}
+
+	.link-esqueci-senha {
+		margin: 0 0 2em 0;
+		text-align: center;
+	}
+
+	.link-esqueci-senha, .link-criar-conta {
+		font-size: 0.8em;
+	}
+
+	.img-bg {
+		height: 40vh;
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width:  768px) {
+
+	.container-flex {
+		flex-wrap: wrap-reverse;
+		margin-bottom: 8em;
+	}
+	.img-bg {
+		height: 60vh;
+	}
+
+	.input {
+		width: 300px;
+	}
+	.link-esqueci-senha {
+		margin: 0 0 2em 0;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width:  1176px) {
+	.container-flex {
+		flex-wrap: wrap-reverse;
+		margin-bottom: 8em;
+	}
+}
